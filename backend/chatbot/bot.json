@@ -1,0 +1,80 @@
+[
+  {
+    "response_type": "greeting",
+    "user_input": ["hello", "hi", "hey"],
+    "bot_response": "Hey there! How are doing right now?",
+    "required_words": []
+  },
+  {
+    "response_type": "greeting",
+    "user_input": ["see you", "goodbye", "bye"],
+    "bot_response": "See you later!",
+    "required_words": []
+  },
+  {
+    "response_type": "greeting",
+    "user_input": ["nice", "to", "meet", "you", "u"],
+    "bot_response": "The pleasure is all mine!",
+    "required_words": ["nice", "meet", "you"]
+  },
+  {
+    "response_type": "well_being",
+    "user_input": ["i", "am", "doing", "good", "happy"],
+    "bot_response": "That is great to hear!",
+    "required_words": ["good", "happy"]
+  },
+  {
+    "response_type": "well_being",
+    "user_input": ["i", "am", "not", "doing", "good", "happy", "have", "having", "trouble", "problem"],
+    "bot_response": "Oh no! How can we help you?",
+    "required_words": ["not", "good", "happy", "have", "having", "trouble", "problem"]
+  },
+  {
+    "response_type": "question",
+    "user_input": ["how", "are", "you"],
+    "bot_response": "I'm great! Thanks for asking.",
+    "required_words": ["how", "are", "you"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "constant", "sudden", "pain", "uncomfortable", "discomfort", "in", "my", "body"],
+    "bot_response": "Sudden or Constant Pain can indicate a Serious Health Risk. Please contact your Doctor or a Family Member to ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["constant", "sudden", "pain","uncomfortable", "discomfort", "body"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "uncomfortable", "discomfort", "pain", "in", "my", "pelvis", "pelvic", "perilean", "area"],
+    "bot_response": "Perineal Pain or Pain in the Pelvis Area after childbirth has immediate and long-term negative effects for women and their babies\nSo here are some tips that can help you feel relieved:\n\n->Apply an Ice Pack\n->Sit Comfortably\n->Have a Warm Bath\n->Take your Prescribed Medicines\n\nIf the Pain feels too much to deal with, Please Contact your Doctor or a Family Member to Ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["uncomfortable", "discomfort", "pain", "pelvis", "pelvic", "perilean"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "uncomfortable", "discomfort", "pain", "having", "contractions"],
+    "bot_response": "If you are having contractions after giving birth, do not panic! Your body knows what it's doing and these contractions\nhelp your uterus shrink down to its original size and prevent you from bleeding too much after giving birth.\n\nTo Feel more Comfortable, Try Walking around with Assistance.\n\nIf the Pain feels too much to deal with, Please Contact your Doctor or a Family Member to Ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["uncomfortable", "discomfort", "contractions"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "depressed", "sad", "down", "baby", "blues", "today", "now"],
+    "bot_response": "Don't Worry! We are here for you! Post-Childbirth Depression is very Common, So we have prepared some resources that can help you with that:\n\nhttps://www.thelivelovelaughfoundation.org/helpline",
+    "required_words": ["depressed", "sad", "down"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "have", "to", "pee", "out", "of", "control", "my", "urine", "leak", "leaks", "leaking"],
+    "bot_response": "Urinary incontinence — the loss of bladder control — is a common problem, especially after childbirth. \n\nKegel exercises can prevent or control urinary incontinence and other pelvic floor problems. Here's a step-by-step guide to doing Kegel exercises correctly.\n\nhttps://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/kegel-exercises/art-20045283",
+    "required_words": ["pee", "control", "urine", "leak", "leaks", "leaking"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "have", "a", "headache", "feeling", "not", "well", "unwell", "stress", "stressed", "anxious", "anxiety"],
+    "bot_response": "We got you! Lie down and Enjoy some Calming and Relaxing Music:\n\nhttps://www.youtube.com/watch?v=yckNP2_2R4g. \n\nIf you are feeling unwell since a long time, Please Contact your Doctor or a Family Member to Ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["headache", "unwell", "stress", "stressed", "anxious", "anxiety"]
+  },
+  {
+    "response_type": "help",
+    "user_input": ["how", "to", "do", "kegel", "exercises"],
+    "bot_response": "Kegel exercises can prevent or control urinary incontinence and other pelvic floor problems. Here's a step-by-step guide to doing Kegel exercises correctly.\n\nhttps://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/kegel-exercises/art-20045283",
+    "required_words": ["kegel", "exercises"]
+  }
+]

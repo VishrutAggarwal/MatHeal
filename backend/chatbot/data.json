@@ -1,0 +1,7 @@
+{
+    "is_initialised": true,
+    "check_in_schedule": {
+        "frequency_per_day": 7.0,
+        "last_check_in_day_by_utc": 0.0
+    }
+}

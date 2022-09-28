@@ -1,0 +1,15 @@
+:root {
+  /* VARIABLES */
+
+  /* Colors */
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #ffffff;
+  --accent-color: #ffffff;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
