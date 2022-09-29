@@ -37,7 +37,7 @@ app.use(
 const db = mysql.createConnection({
     user: "root",
     host: "localhost",
-    password: "Mysql@password",
+    password: "arkosios",
     database: "matheal-test"
 });
 

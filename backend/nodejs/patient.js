@@ -37,7 +37,7 @@ app.use(
 const db = mysql.createConnection({
     user: "root",
     host: "localhost",
-    password: "Mysql@password",
+    password: "arkosios",
     database: "matheal-test"
 });
 
@@ -61,7 +61,7 @@ app.post("/patientregister", (req, res) => {
 
         db.query(
             "INSERT INTO patient (name, number, email, password, dob, blood, profile, address, city, state, emergencyContact) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-            [name, number, email, dob, blood, profile, address, city, state, emergencyContact, hash],
+            [name, number, email, hash, dob, blood, profile, address, city, state, emergencyContact],
             (err, result) => {
                 console.log(err);
             }

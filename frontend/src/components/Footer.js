@@ -20,7 +20,7 @@ function Footer() {
             <br/> */}
             <Row>
                 <Col>Copyright, 2022 @developers</Col>
-                <Col>Created with by <a href='https://github.com/VishrutAggarwal' class='text-light stretched-link'>Vishrut</a>, <a href='https://github.com/aku1310' class='text-light stretched-link'>Akanksha</a>, <a href='https://github.com/ArshPanesar' class='text-light stretched-link'>Arsh</a>, <a href='hhttps://github.com/shru1032' class='text-light stretched-link'>Shruti</a></Col>
+                <Col>Created with by <a href='https://github.com/VishrutAggarwal' class='text-light stretched-link'>Vishrut</a>, <a href='https://github.com/aku1310' class='text-light stretched-link'>Akanksha</a>, <a href='https://github.com/ArshPanesar' class='text-light stretched-link'>Arsh</a>, <a href='https://github.com/shru1032' class='text-light stretched-link'>Shruti</a></Col>
             </Row>
         </Container>
     </div>

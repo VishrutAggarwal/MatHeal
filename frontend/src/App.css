@@ -13,3 +13,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.width50perc {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headinf {
+  font-size: 7rem;
+}

@@ -156,11 +156,11 @@ class Bot:
 
 
 # UNCOMMENT THIS SNIPPET TO TEST BOT
-# MyBot = Bot()
-# while True:
-#     Messege = MyBot.check_in_on_mother()
-#     if Messege != "":
-#         print('Bot: ', Messege)
-#     else:
-#         Input = input('You: ')
-#         print('Bot: ', MyBot.get_response(Input))
+MyBot = Bot()
+while True:
+    Messege = MyBot.check_in_on_mother()
+    if Messege != "":
+        print('Bot: ', Messege)
+    else:
+        Input = input('You: ')
+        print('Bot: ', MyBot.get_response(Input))

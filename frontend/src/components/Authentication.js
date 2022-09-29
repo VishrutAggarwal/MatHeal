@@ -393,6 +393,109 @@ function Authentication() {
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Register</Accordion.Header>
                                         <Accordion.Body>
+                                        <label className="form-label gx-5" id='headingteammem' for="form3Example1q">Enter Details of Personnl</label>
+                                            <div className="row rowforflname" >
+
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="name"> Name:</label>
+                                                        <input type="text" id="lastName" className="form-control page form-control-lg" required onChange={e => setName(e.target.value)} />
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="mobile">Mobile Number: </label>
+                                                        <input type="text" className="form-control page form-control-lg" id="mobile" onChange={e => setNumber(e.target.value)} required />
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div className="form-outline mb-4">
+                                                <label className="form-label" for="email">Email: </label>
+                                                <input type="text" id="email" onChange={e => setEmail(e.target.value)} required className="form-control page form-control-lg" />
+
+
+                                            </div>
+                                            <div className="form-outline mb-4">
+                                                <label className="form-label" for="pass">Password: </label>
+                                                <input type="text" id="pass" onChange={e => setPassword(e.target.value)} required className="form-control page form-control-lg" />
+
+
+                                        
+                                            </div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="profile">Profile:</label>
+                                                        <input type="text" id="blood" onChange={e => setProfile(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="certificateid">Certificate ID:</label>
+                                                        <input type="text" id="certificateid" onChange={e => setCertificateID(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="certificate">Certificate:</label>
+                                                        <input type="text" id="certificate" onChange={e => setCertificate(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="city">City:</label>
+                                                        <input type="text" id="city" onChange={e => setCity(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="state">State:</label>
+                                                        <input type="text" id="state" onChange={e => setState(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                    
+
+                                            <input type="submit" onClick={registerPersonnel} className="btn btn-success page btn-lg mb-1" value='Register'></input>
+
+
 
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -428,6 +531,107 @@ function Authentication() {
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Register</Accordion.Header>
                                         <Accordion.Body>
+                                        <label className="form-label gx-5" id='headingteammem' for="form3Example1q">Enter Details of Supplier</label>
+                                            <div className="row rowforflname" >
+
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="name"> Name:</label>
+                                                        <input type="text" id="lastName" className="form-control page form-control-lg" required onChange={e => setName(e.target.value)} />
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="mobile">Mobile Number: </label>
+                                                        <input type="text" className="form-control page form-control-lg" id="mobile" onChange={e => setNumber(e.target.value)} required />
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div className="form-outline mb-4">
+                                                <label className="form-label" for="email">Email: </label>
+                                                <input type="text" id="email" onChange={e => setEmail(e.target.value)} required className="form-control page form-control-lg" />
+
+
+                                            </div>
+                                            <div className="form-outline mb-4">
+                                                <label className="form-label" for="pass">Password: </label>
+                                                <input type="text" id="pass" onChange={e => setPassword(e.target.value)} required className="form-control page form-control-lg" />
+
+
+                                            </div>
+
+
+                                            
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="certificateid">Certificate ID:</label>
+                                                        <input type="text" id="certificateid" onChange={e => setCertificateID(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="certificate">Certificate:</label>
+                                                        <input type="text" id="certificate" onChange={e => setCertificate(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+</div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="address">Address:</label>
+                                                        <input type="text" id="address" onChange={e => setAddress(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="city">City:</label>
+                                                        <input type="text" id="city" onChange={e => setCity(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div className="row rowfordegbran" >
+                                                <div className="col-md-6 mb-4">
+
+                                                    <div className="form-outline">
+                                                        <label className="form-label" for="state">State:</label>
+                                                        <input type="text" id="state" onChange={e => setState(e.target.value)} required className="form-control page form-control-lg" />
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <input type="submit" onClick={registerSupplier} className="btn btn-success page btn-lg mb-1" value='Register'></input>
+
 
                                         </Accordion.Body>
                                     </Accordion.Item>

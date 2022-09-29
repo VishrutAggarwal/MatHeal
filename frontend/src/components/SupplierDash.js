@@ -2,9 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import RiskForm from './RiskForm';
 
-function PatientDash() {
+function SupplierDash() {
   return (
     <div>
         <Navbar bg="success" variant="dark">
@@ -17,9 +16,8 @@ function PatientDash() {
           </Nav>
         </Container>
       </Navbar>
-      <RiskForm/>
     </div>
   )
 }
 
-export default PatientDash
+export default SupplierDash
