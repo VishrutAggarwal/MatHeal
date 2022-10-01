@@ -43,6 +43,7 @@ class Bot:
         # Check if Bot needs to be First-Time Initialized (When App is Started for the First Time by a User)
         IsInitialised = BotData["is_initialised"]
         if not IsInitialised:
+            print('run hora hai')
             # Do a Check-in on Mother on First Run
             BotData["check_in_schedule"]["last_check_in_day_by_utc"] = 0.0#get_time_in_utc()
             BotData["is_initialised"] = True
@@ -156,12 +157,41 @@ class Bot:
             
         return ""
 
+    def get_time_left_for_next_check_in(self):
+        LastCheckin = BotData["check_in_schedule"]["last_check_in_day_by_utc"]
+        Freq = BotData["check_in_schedule"]["frequency_per_day"]
+        
+        # Check if its Time for a Checkin
+        #print(LastCheckin)
+        
+        utc = get_time_in_utc()
+        NumOfDaysSinceEpoch = utc / 86400.0    
+        NumOfDaysElapsed = NumOfDaysSinceEpoch - LastCheckin
+        NumOfDaysLeft = Freq - NumOfDaysElapsed
+        #print('Current,', NumOfDaysSinceEpoch)
+        
+        if DEBUG:
+            NumOfSecondsElapsed = utc - (LastCheckin * 86400)
+            NumofSecondsLeft = Freq - NumOfSecondsElapsed
+            return NumofSecondsLeft
+
+        return NumOfDaysLeft
+
     def run(self, user_input):
-        Messege = self.check_in_on_mother()
+        CheckinMsg = self.check_in_on_mother()
+        TimeUnit = ' Days'
+        if DEBUG:
+            TimeUnit = ' Seconds'
+        
+        #print(self.get_time_left_for_next_check_in())
+
+        CheckinHeader = 'CHECK-IN TIME: '
+        if CheckinMsg == "":
+            CheckinMsg = "Check-in will happen in " + str(int(self.get_time_left_for_next_check_in())) + TimeUnit
+            CheckinHeader = ''
 
         # Check if we need to Perform Survey
-        if Messege == "":
-            Messege = self.get_response(user_input)
+        Messege = CheckinHeader + self.get_response(user_input) + '\n\n' + CheckinMsg
         
         return Messege
 
@@ -171,7 +201,7 @@ class Bot:
 # MyBot = Bot()
 # while True:
 #     Input = input('\nYou: ')
-#     print('Bot: ', MyBot.get_response(Input))
+#     print('Bot: ', MyBot.run(Input))
 
 
 

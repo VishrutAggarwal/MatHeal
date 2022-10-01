@@ -13,6 +13,7 @@ MyBot = Bot.Bot()
 
 @app.route('/')
 def hello_world():
+    #print("Hello")
     return render_template("SampleSite.html")
 
 
@@ -20,7 +21,9 @@ def hello_world():
 def bot():
     UserInput = request.form['Your Messege']
     print(UserInput)
-    return render_template('SampleSite.html',msg=MyBot.run(UserInput),bhai="Take care!")
+
+    Messege = MyBot.run(UserInput)
+    return render_template('SampleSite.html', msg=Messege,bhai="Take care!")
 
 
 if __name__ == '__main__':

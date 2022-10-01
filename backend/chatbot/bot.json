@@ -97,8 +97,8 @@
   },
   {
     "response_type": "help",
-    "user_input": ["how", "to", "do", "kegel", "exercises"],
+    "user_input": ["how", "to", "do", "kegel", "kegels", "exercises"],
     "bot_response": "Kegel exercises can prevent or control urinary incontinence and other pelvic floor problems. Here's a step-by-step guide to doing Kegel exercises correctly.\n\nhttps://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/kegel-exercises/art-20045283",
-    "required_words": ["kegel", "exercises"]
+    "required_words": ["kegel", "kegels", "exercises"]
   }
 ]
