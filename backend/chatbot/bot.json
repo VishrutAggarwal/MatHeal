@@ -43,9 +43,33 @@
   },
   {
     "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "constant", "sudden", "severe", "trouble", "breathing", "breaths", "dizzy", "dizziness", "vision", "severe", "headache", "swelling"],
+    "bot_response": "Severe headache, dizziness, pain in the upper right belly or in the shoulder, trouble breathing, sudden weight gain or swelling in the legs, hands or face can be a sign of postpartum preeclampsia. This is a serious condition that happens when a woman has high blood pressure and signs that some of her organs, like her kidneys and liver, may not be working normally after giving birth. Please contact your Doctor or a Family Member to ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["trouble", "breathing", "breaths", "dizzy", "dizziness", "vision", "severe", "headache", "swelling"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "constant", "sudden", "severe", "gasping", "gasp", "air", "breath", "cough", "coughing", "chest", "pain"],
+    "bot_response": "If you have been having these symptoms for some time, You may have a pulmonary embolism (also called PE). An embolism is a blood clot that moves from where it formed to another place in the body. When the clot moves to a lung, it’s PE. PE is an emergency. Please contact your Doctor or a Family Member to ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["severe", "gasping", "gasp", "air", "breath", "cough", "coughing", "chest", "pain"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "feeling", "constant", "sudden", "severe", "trouble", "breathing", "breaths"],
+    "bot_response": "Trouble Breathing can be a sign of an Infection. Please contact your Doctor or a Family Member to ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["uncomfortable", "discomfort", "trouble", "breathing"]
+  },
+  {
+    "response_type": "symptom_check",
     "user_input": ["i", "am", "feeling", "uncomfortable", "discomfort", "pain", "in", "my", "pelvis", "pelvic", "perilean", "area"],
     "bot_response": "Perineal Pain or Pain in the Pelvis Area after childbirth has immediate and long-term negative effects for women and their babies\nSo here are some tips that can help you feel relieved:\n\n->Apply an Ice Pack\n->Sit Comfortably\n->Have a Warm Bath\n->Take your Prescribed Medicines\n\nIf the Pain feels too much to deal with, Please Contact your Doctor or a Family Member to Ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
     "required_words": ["uncomfortable", "discomfort", "pain", "pelvis", "pelvic", "perilean"]
+  },
+  {
+    "response_type": "symptom_check",
+    "user_input": ["i", "am", "having", "feeling", "have", "fever", "sick", "ill"],
+    "bot_response":"If you have a fever of over 100.4 F, you may have an infection that can cause long term health conditions. Please contact your Doctor or a Family Member to ensure your Safety.\nHere are some contacts for nearby Hospitals:\n\n+91-9876543210\n+91-9753186420",
+    "required_words": ["fever", "sick", "ill"]
   },
   {
     "response_type": "symptom_check",

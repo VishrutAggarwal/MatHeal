@@ -2,6 +2,7 @@
     "is_initialised": true,
     "check_in_schedule": {
         "frequency_per_day": 7.0,
-        "last_check_in_day_by_utc": 19263.32743507473
-    }
+        "last_check_in_day_by_utc": 19266.258742424783
+    },
+    "check_in_form": "https://forms.gle/AxyRH7SJu6WNZEPA8"
 }

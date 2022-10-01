@@ -147,20 +147,39 @@ class Bot:
             "Hey there! Tell me about your day, how have you been feeling?"
             ]
 
+            SurveyMessege = '\n\nWe would like to provide the best care we can, if you would like to answer some questions for us, click on this link below!\n\n <a href = "https://forms.gle/AxyRH7SJu6WNZEPA8"> Click Here </a>'
+
             Count = len(RandomList)
             RandomItem = random.randrange(Count)
 
-            return RandomList[RandomItem]
+            return RandomList[RandomItem] + SurveyMessege
             
         return ""
 
+    def run(self, user_input):
+        Messege = self.check_in_on_mother()
 
-# UNCOMMENT THIS SNIPPET TO TEST BOT
-MyBot = Bot()
-while True:
-    Messege = MyBot.check_in_on_mother()
-    if Messege != "":
-        print('Bot: ', Messege)
-    else:
-        Input = input('You: ')
-        print('Bot: ', MyBot.get_response(Input))
+        # Check if we need to Perform Survey
+        if Messege == "":
+            Messege = self.get_response(user_input)
+        
+        return Messege
+
+
+
+# UNCOMMENT THIS SNIPPET TO TEST CHATBOT FUNCTIONALITY
+# MyBot = Bot()
+# while True:
+#     Input = input('\nYou: ')
+#     print('Bot: ', MyBot.get_response(Input))
+
+
+
+# UNCOMMENT THIS SNIPPET TO TEST CHECK-IN FUNCTIONALITY (DEBUG TIME IS 7 SECONDS)
+# MyBot = Bot()
+# while True:
+#     Messege = MyBot.check_in_on_mother()
+#     if Messege != "":
+#         print('\n\nBot: ', Messege)
+#         print('\n')
+
