@@ -190,11 +190,15 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 
 ## Contact
+
+### Team Links
+
+<br>
+
 Vishrut Aggarwal - [@AggarwalVishrut](https://twitter.com/AggarwalVishrut) - [Vishrut Aggarwal](https://linkedin.com/in/vishrut-aggarwal)
 
 Profile Link: [https://github.com/VishrutAggarwal](https://github.com/VishrutAggarwal)
 
-<br>
 <br>
 
 Akanksha Kushwaha - [@aku1310](https://twitter.com/aku1310) - [Akanksha Kushwaha](https://linkedin.com/in/aku1310)
@@ -204,7 +208,14 @@ Profile Link: [https://github.com/aku1310](https://github.com/aku1310)
 <br>
 <br>
 
-Project Link: [https://github.com/VishrutAggarwal/MatHeal](https://github.com/VishrutAggarwal/MatHeal)
+### Project Links
+
+<br>
+<!-- Repository Link: [https://github.com/VishrutAggarwal/MatHeal](https://github.com/VishrutAggarwal/MatHeal) -->
+
+* Demo Video Link: 
+
+* Deployed Site: 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
