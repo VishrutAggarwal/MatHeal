@@ -4,8 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 function Authentication() {
+
+    let navigate = useNavigate();
+
 
     const [name, setName] = useState('');
     const [dob, setDOB] = useState('');
@@ -164,10 +168,14 @@ function Authentication() {
 
     const loginSupplier = () => {
         Axios.post("http://localhost:3001/supplierlogin", {
-            name: name,
+            email: email,
             password: password,
         }).then((response) => {
-            if (response.data.message) {
+            if(response.status==200){
+                const id = response.data.id;
+                navigate(`/supplierdash/${id}`);
+              }
+            else if (response.data.message) {
                 setLoginStatus(response.data.message);
             } else {
                 setLoginStatus(response.data[0].username);
