@@ -19,11 +19,11 @@ def hello_world():
 
 @app.route('/bot',methods=['POST','GET'])
 def bot():
-    UserInput = request.form['Your Messege']
-    print(UserInput)
+    message = request.form['Your Messege']
+    print(message)
 
-    Messege = MyBot.run(UserInput)
-    return render_template('SampleSite.html', msg=Messege,bhai="Take care!")
+    Messege = MyBot.run(message)
+    return render_template('SampleSite.html', responseText=Messege,bhai="Take care!")
 
 
 if __name__ == '__main__':
