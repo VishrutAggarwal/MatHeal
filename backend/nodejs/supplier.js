@@ -37,7 +37,7 @@ app.use(
 const db = mysql.createConnection({
     user: "root",
     host: "localhost",
-    password: "arkosios",
+    password: "Mysql@password",
     database: "matheal-test"
 });
 
@@ -58,8 +58,8 @@ app.post("/supplierregister", (req, res) => {
         }
 
         db.query(
-            "INSERT INTO supplier (name, number, email, password, certificateID, certificate, address, city, state) VALUES (?,?,?,?,?,?,?,?,?)",
-            [name, number, email, certificateID, certificate, address, city, state, hash],
+            "INSERT INTO supplier (name, number, password, email, certificateID, certificate, address, city, state) VALUES (?,?,?,?,?,?,?,?,?)",
+            [name, number, hash, email, certificateID, certificate, address, city, state],
             (err, result) => {
                 console.log(err);
             }
@@ -99,8 +99,8 @@ app.post("/supplierlogin", (req, res) => {
     const password = req.body.password;
 
     db.query(
-        "SELECT * FROM supplier WHERE username = ?;",
-        name,
+        "SELECT * FROM supplier WHERE email = ?;",
+        email,
         (err, result) => {
             if (err) {
                 res.send({ err: err });
