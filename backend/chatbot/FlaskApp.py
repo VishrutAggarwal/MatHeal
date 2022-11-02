@@ -10,20 +10,20 @@ AppDirectory = os.path.dirname(os.path.realpath(__file__))
 app = Flask(__name__, template_folder=AppDirectory)
 
 MyBot = Bot.Bot()
+Messege = ""
 
-@app.route('/')
+@app.route('/bot')
 def hello_world():
     #print("Hello")
     return render_template("SampleSite.html")
 
-
-@app.route('/bot',methods=['POST','GET'])
+@app.route('/',methods=['POST'])
 def bot():
     message = request.form['Your Messege']
     print(message)
 
     Messege = MyBot.run(message)
-    return render_template('SampleSite.html', responseText=Messege,bhai="Take care!")
+    return Messege
 
 
 if __name__ == '__main__':
