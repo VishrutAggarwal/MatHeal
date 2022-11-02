@@ -11,20 +11,20 @@ function Chatbot() {
     const [responseText, setResponseText] = useState("");
 
     const sendMessage = () => {
-        Axios.post("http://localhost:5000/bot", {
+        Axios.post("http://localhost:5000/", {
             message: message
         }).then((response) => {
-            console.log(response);
+            setResponseText(response.data);
         });
 
-        Axios({
-            method:"GET",
-            url:`http://localhost:5000/bot`
-          }).then((res)=>{
-            setResponseText(res.data);
-          }).catch((err)=>{
-            console.log(err);
-          })
+        // Axios({
+        //     method:"GET",
+        //     url:`http://localhost:5000/bot`
+        //   }).then((res)=>{
+        //     setResponseText(res.data);
+        //   }).catch((err)=>{
+        //     console.log(err);
+        //   })
     }
 
     // const getResponse = () => {
@@ -37,28 +37,28 @@ function Chatbot() {
 
     return (
         <div>
-            <div class="section no-pad-bot" id="index-banner">
-                <div class="container">
-                    <h1 class="header center orange-text">ChatBot</h1>
-                    <div class="row center">
-                        <h5 class="header col s12 light">Enter Input to Talk to the Bot
+            <div className="section no-pad-bot" id="index-banner">
+                <div className="container">
+                    <h1 className="header center orange-text">ChatBot</h1>
+                    <div className="row center">
+                        <h5 className="header col s12 light">Enter Input to Talk to the Bot
 
                         </h5>
                     </div>
 
-                    <div class="row">
-                        <form action='/bot' method="post" class="col s12">
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <label for="first_name"><b>Say Something</b></label>
+                    <div className="row">
+                        <form action='/bot' method="post" className="col s12">
+                            <div className="row">
+                                <div className="input-field col s4">
+                                    <label htmlFor="first_name"><b>Say Something</b></label>
 
-                                    <input onChange={e => setMessage(e.target.value)} placeholder="Hello" name="Your Messege" id="first_name" type="text" class="validate" />
+                                    <input onChange={e => setMessage(e.target.value)} placeholder="Hello" name="Your Messege" id="first_name" type="text" className="validate" />
                                 </div>
                             </div>
 
-                            <div class="row center">
+                            <div className="row center">
 
-                                <button type="submit" onClick={sendMessage} class="btn-large waves-effect waves-light orange">Get Response</button>
+                                <button type="submit" onClick={sendMessage} className="btn-large waves-effect waves-light orange">Get Response</button>
 
                                 <p>{responseText}</p>
                             </div>
