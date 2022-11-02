@@ -73,10 +73,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <!-- <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <!-- <li><a href="#license">License</a></li> -->
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
@@ -101,8 +101,6 @@ This can be avoided if the expecting mothers have a way to communicate with othe
 
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -201,9 +199,21 @@ Profile Link: [https://github.com/VishrutAggarwal](https://github.com/VishrutAgg
 
 <br>
 
-Akanksha Kushwaha - [@aku1310](https://twitter.com/aku1310) - [Akanksha Kushwaha](https://linkedin.com/in/aku1310)
+Akanksha Kushwaha - [@akanksha___13](https://twitter.com/akanksha___13) - [Akanksha Kushwaha](https://linkedin.com/in/aku1310)
 
 Profile Link: [https://github.com/aku1310](https://github.com/aku1310)
+
+<br>
+
+Arsh Panesar - [@ArshPanesar12](https://twitter.com/ArshPanesar12) - [Arsh Panesar](https://linkedin.com/in/arsh-panesar-b0334a1ba/)
+
+Profile Link: [https://github.com/ArshPanesar](https://github.com/ArshPanesar)
+
+<br>
+
+Shruti Gupta - [@shrutig1032](https://twitter.com/shrutig1032) - [Shruti Gupta](https://www.linkedin.com/in/shruti-gupta-36244b1b6/)
+
+Profile Link: [https://github.com/shru1032](https://github.com/shru1032)
 
 <br>
 <br>
