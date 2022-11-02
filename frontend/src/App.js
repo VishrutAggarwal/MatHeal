@@ -8,6 +8,7 @@ import NoPage from './components/NoPage';
 import CommunityDashBoard from './components/CommunityDashBoard';
 import CommunityLogin from './components/CommunityLogin';
 import SupplierDash from './components/SupplierDash';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path ='/communitylogin' element={<CommunityLogin />}></Route>
         <Route path ='/communitydashboard' element={<CommunityDashBoard />}></Route>
         <Route path ='/supplierdash/:id' element={<SupplierDash />}></Route>
-        <Route exact path ='/' element = {<Landing />}></Route>
+        <Route exact path ='/' element={<Chatbot />}></Route>
+        {/* <Route exact path ='/' element = {<Landing />}></Route> */}
         {/* <Route exact path ='/' element = {<Test />}></Route> */}
       </Routes>
     </HashRouter>
