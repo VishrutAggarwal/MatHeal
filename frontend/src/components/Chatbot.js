@@ -36,7 +36,7 @@ function Chatbot() {
     // }
 
     return (
-        <div>
+        <div id="chatbot-page">
             <div className="section no-pad-bot" id="index-banner">
                 <div className="container">
                     <h1 className="header center orange-text">ChatBot</h1>

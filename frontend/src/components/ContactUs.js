@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 
 function ContactUs() {
   return (
-    <Container className='min-vh-100 align-items-center'>
+    <Container className='min-vh-100 align-items-center' id='contactus'>
         <Row>
             <Col>
                 <Form>
