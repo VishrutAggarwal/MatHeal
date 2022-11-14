@@ -85,7 +85,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project And Our Motivation
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Screenshot](./screenshots/1.png)
+![Screenshot](./screenshots/2.png)
+![Screenshot](./screenshots/3.png)
 
 <br>
 
