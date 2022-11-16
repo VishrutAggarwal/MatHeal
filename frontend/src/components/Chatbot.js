@@ -16,24 +16,7 @@ function Chatbot() {
         }).then((response) => {
             setResponseText(response.data);
         });
-
-        // Axios({
-        //     method:"GET",
-        //     url:`http://localhost:5000/bot`
-        //   }).then((res)=>{
-        //     setResponseText(res.data);
-        //   }).catch((err)=>{
-        //     console.log(err);
-        //   })
     }
-
-    // const getResponse = () => {
-    //     Axios.get("http://localhost:5000/bot", {
-    //         setResponseText: responseText
-    //     }).then((response) => {
-    //         console.log(response);
-    //     });
-    // }
 
     return (
         <div id="chatbot-page">

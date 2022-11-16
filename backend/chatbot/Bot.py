@@ -194,22 +194,3 @@ class Bot:
         Messege = CheckinHeader + self.get_response(user_input) + '\n\n' + CheckinMsg
         
         return Messege
-
-
-
-# UNCOMMENT THIS SNIPPET TO TEST CHATBOT FUNCTIONALITY
-# MyBot = Bot()
-# while True:
-#     Input = input('\nYou: ')
-#     print('Bot: ', MyBot.run(Input))
-
-
-
-# UNCOMMENT THIS SNIPPET TO TEST CHECK-IN FUNCTIONALITY (DEBUG TIME IS 7 SECONDS)
-# MyBot = Bot()
-# while True:
-#     Messege = MyBot.check_in_on_mother()
-#     if Messege != "":
-#         print('\n\nBot: ', Messege)
-#         print('\n')
-

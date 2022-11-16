@@ -239,7 +239,7 @@ function Authentication() {
 
 
     return (
-        <Container className='min-vh-100' id="authentication">
+        <Container className='min-vh-100'>
             <Row>
                 <Col>
                     <Accordion>

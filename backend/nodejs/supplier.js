@@ -67,25 +67,6 @@ app.post("/supplierregister", (req, res) => {
     });
 });
 
-// app.post("/register", (req, res) => {
-//     const name = req.body.name;
-//     const password = req.body.password;
-
-//     bcrypt.hash(password, saltRounds, (err, hash) => {
-//         if (err) {
-//             console.log(err);
-//         }
-
-//         db.query(
-//             "INSERT INTO users (name, password) VALUES (?,?)",
-//             [name, hash],
-//             (err, result) => {
-//                 console.log(err);
-//             }
-//         );
-//     });
-// });
-
 app.get("/supplierlogin", (req, res) => {
     if (req.session.user) {
         res.send({ loggedIn: true, user: req.session.user });

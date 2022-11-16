@@ -11,7 +11,7 @@ function CommunityLogin() {
 
     const [loginStatus, setLoginStatus] = useState("");
 
-    Axios.defaults.withCredentials = true;
+    Axios.defaults.withCredentials = true; 
 
     const register = () => {
         Axios.post("http://localhost:3001/communityregister", {

@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
 const bcrypt = require("bcrypt");
-const saltRounds = 10;
+const saltRounds = 10; 
 
 const app = express();
 
@@ -68,25 +68,6 @@ app.post("/patientregister", (req, res) => {
         );
     });
 });
-
-// app.post("/register", (req, res) => {
-//     const name = req.body.name;
-//     const password = req.body.password;
-
-//     bcrypt.hash(password, saltRounds, (err, hash) => {
-//         if (err) {
-//             console.log(err);
-//         }
-
-//         db.query(
-//             "INSERT INTO users (name, password) VALUES (?,?)",
-//             [name, hash],
-//             (err, result) => {
-//                 console.log(err);
-//             }
-//         );
-//     });
-// });
 
 app.get("/patientlogin", (req, res) => {
     if (req.session.user) {

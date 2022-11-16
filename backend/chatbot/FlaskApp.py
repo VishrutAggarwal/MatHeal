@@ -14,7 +14,6 @@ Messege = ""
 
 @app.route('/bot')
 def hello_world():
-    #print("Hello")
     return render_template("SampleSite.html")
 
 @app.route('/',methods=['POST'])

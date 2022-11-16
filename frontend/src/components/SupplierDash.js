@@ -9,8 +9,7 @@ import Axios from "axios";
 function SupplierDash() {
 
   const navigate=useNavigate();
-  const {id}=useParams();
-
+  const {id}=useParams(); 
   const [name, setName] = useState("");
     const [price, setPrice] = useState(0);
     const [quantity, setQuantity] = useState(0);
@@ -79,7 +78,6 @@ function SupplierDash() {
           />
           </div>
           <button onClick={addStuff}>Add Products</button>
-          {/* <button onClick={getStuff}>Show Products</button> */}
 
           {stuffList.map((val, key) => {
             return (

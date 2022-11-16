@@ -7,17 +7,6 @@ function Footer() {
   return (
     <div className='bg-dark text-white w-auto p-3 align-items-center'>
         <Container className='min-vh-60'>
-            {/* <Row>
-                <Col>
-                    <h3>Sitemap</h3>
-                </Col>
-                <Col>
-                    <Row>Home</Row>
-                    <Row>Documentation</Row>
-                </Col>
-            </Row>
-            <br/>
-            <br/> */}
             <Row>
                 <Col>Copyright, 2022 @developers</Col>
                 <Col>Created with ❤️ by <a href='https://github.com/VishrutAggarwal' class='text-light stretched-link'>Vishrut</a>, <a href='https://github.com/aku1310' class='text-light stretched-link'>Akanksha</a>, <a href='https://github.com/ArshPanesar' class='text-light stretched-link'>Arsh</a>, <a href='https://github.com/shru1032' class='text-light stretched-link'>Shruti</a></Col>
